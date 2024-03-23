@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Variaveis de paletas*/
+:root {
+    --cor-one: #E9967A;
+    --cor-two: #252525;
+    --cor-tree: #dddddd;
+    --cor-four: #F9FAD2;
+}
+
+/*Fonts do google, usar valor de weigth de 300 ate 900*/
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body,
+html {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: var(--cor-two);
+    overflow-y: auto;
+    height: 100%;
+}
+
+section {}
