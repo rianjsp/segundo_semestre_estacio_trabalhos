@@ -54,6 +54,11 @@ main {
     overflow-y: auto;
 }
 
+.logotipo {
+    width: 50px;
+    height: 50px;
+}
+
 .title {
     display: flex;
     flex-direction: row;
@@ -65,7 +70,7 @@ main {
     text-transform: capitalize;
 }
 
-.content {
+.content-desc {
     font-weight: bolder;
 }
 
@@ -74,4 +79,41 @@ footer {
     color: var(--cor-tree);
     padding: 10px;
     text-align: center;
+}
+
+
+/* Personalização da barra de rolagem vertical */
+::-webkit-scrollbar {
+    width: 20px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-two);
+    border-radius: 0% 0% 0% 0%;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+/* Estilizacao da barra de rolagem para o navegador Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f5f5f5;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
