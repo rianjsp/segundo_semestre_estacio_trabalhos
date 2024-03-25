@@ -4,8 +4,8 @@
 • Front-end e Back-end 
 
 🌱 Estudando as stacks do semestre: 
-• JavaScript e Frameworks: 
-• (ExpressJS, ReactJS, Vuejs...)
+JavaScript e Frameworks: 
+(ExpressJS, ReactJS, Vuejs...)
 ![javascript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg)
 
 
@@ -33,5 +33,5 @@ Implementação de Servidor baseado em Express e Mongoose, acessando o banco de 
 
 **Front-end:** React, Next JS, TailwindCSS, Bootstrap, Angular, VUE JS
 
-**Back-end:** Node, Express, MongoDB, Mongoose
+**Back-end:** Node, Express, MongoDB, Mongoose, Typescript
 
