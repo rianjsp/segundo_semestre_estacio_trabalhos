@@ -54,10 +54,16 @@
             <div class="container mt-5 mb-5">
                 <div class="content-cadastro">
                     <h1>Efetue seu cadastro</h1>
-                    <form method="POST" action="processar_formulario.php">
+                    <form method="post" action="https://api.staticforms.xyz/submit">
+                        <input type="hidden" name="accessKey" value="577a2cfe-5e69-4891-b8e1-a7cf7b3cca3d">
+                        <input type="hidden" name="message" value="Cadastro realizado com sucesso!">
+                        <input type="hidden" name="subject" value="Novo Cadastro feito">
+                        <input type="hidden" name="redirectTo"
+                            value="http://http//127.0.0.1:5500/primeiro_site_cringe/receitas/static/home.html">
+
                         <div class="mb-3">
                             <label for="inputNome" class="form-label">Nome</label>
-                            <input type="text" name="nome" class="form-control" id="inputNome"
+                            <input type="text" name="name" class="form-control" id="inputNome"
                                 placeholder="Digite seu nome" required>
                         </div>
                         <div class="mb-3">
