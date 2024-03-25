@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,105 +21,114 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"
-        defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"
-        defer></script>
 </head>
 
 <body>
 
-    <section class="container-fluid" style="margin: 0px; padding: 0px;">
+    <section class="container-fluid p-0">
         <header>
-            <h3>menu</h3>
+            <!-- Barra de Navegação -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Tia Jurema</a>
+                    <div class="navbar" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/primeiro_site_cringe/receitas/home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/primeiro_site_cringe/receitas/receitas.html">Receitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"
+                                    href="/primeiro_site_cringe/receitas/cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
             <!-- Onde os itens serao apresentados-->
-            <div class="content-cadastro container">
-
-                <form>
-                    <div class="row mb-3">
-                        <label for="inputNome" class="col-sm-2 col-form-label">Nome</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+            <div class="container mt-5 mb-5">
+                <div class="content-cadastro">
+                    <h1>Efetue seu cadastro</h1>
+                    <form method="post" action="processar_formulario.php">
+                        <div class="mb-3">
+                            <label for="inputNome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome"
+                                required>
                         </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email">
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email"
+                                required>
                         </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <label for="inputCEP" class="col-sm-2 col-form-label">CEP</label>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" id="inputCEP" placeholder="Digite seu CEP">
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <label for="inputRua" class="col-sm-2 col-form-label">Rua</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputRua"
-                                placeholder="Digite o nome da sua rua">
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <label for="inputNumero" class="col-sm-2 col-form-label">N°</label>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" id="inputNumero" placeholder="Digite o número">
-                        </div>
-
                         <div class="row mb-3">
-                            <label for="inputComplemento" class="col-md-2 col-form-label">Complemento</label>
-                            <div class="col-md-3">
-                                <input type="text" class="form-control" id="inputComplemento"
-                                    placeholder="Digite o complemento">
+                            <div class="col-md-4">
+                                <label for="inputCEP" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="inputCEP" placeholder="Digite seu CEP"
+                                    maxlength="8" required>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="inputRua" class="form-label">Rua</label>
+                                <input type="text" class="form-control" id="inputRua"
+                                    placeholder="Digite o nome da sua rua" required>
                             </div>
                         </div>
-                    </div>
-
-
-
-                    <div class="row mb-3">
-                        <label for="inputCidade" class="col-sm-2 col-form-label">Cidade</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputCidade"
-                                placeholder="Digite o nome da sua cidade">
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="inputNumero" class="form-label">N°</label>
+                                <input type="number" class="form-control" id="inputNumero" placeholder="Digite o número"
+                                    required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputComplemento" class="form-label">Complemento</label>
+                                <input type="text" class="form-control" id="inputComplemento"
+                                    placeholder="Digite o complemento" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCidade" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="inputCidade"
+                                    placeholder="Digite o nome da sua cidade" required>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <label for="inputUF" class="col-sm-2 col-form-label">UF</label>
-                        <div class="col-md-2">
-                            <input type="text" class="form-control" id="inputUF" placeholder="Digite a UF">
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="inputUF" class="form-label">UF</label>
+                                <input type="text" class="form-control" id="inputUF" placeholder="Digite a UF"
+                                    maxlength="2" required>
+                            </div>
                         </div>
 
-                        <div class="col-md-8">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </div>
-
-
-                </form>
-
+                        <button type="submit" class="btn text-white bg-dark" value="Enviar">Cadastrar</button>
+                    </form>
+                </div>
             </div>
-
-
         </main>
-        <footer>
+        <footer class="fixed-bottom">
             <div class="copy">
                 <h3>&copy;Jurema 2022</h3>
             </div>
         </footer>
     </section>
 
-    <script></script>
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper ">  </script>
+
+    <!-- Script para funções variadas-->
+    <script>
+        document.getElementById('inputCEP').addEventListener('input', function (e) {
+            const cep = e.target.value.replace(/\D/g, '')
+            if (cep.length === 8) {
+                e.target.value = cep.replace(/^(\d{5})(\d{3})$/, '$1-$2');
+
+            }
+        })
+    </script>
 </body>
 
 </html>

@@ -33,16 +33,27 @@ html {
 
 
 
-.receitas {
+.cards_receitas {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: center;
     box-sizing: border-box;
 }
 
-.card {
+.card_body {
+    transition: 0.5s ease-in-out;
+}
+
+.card_body:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.199);
+}
+
+
+.card_content {
     border-radius: 10px;
     width: 550px;
     height: 980px;
@@ -53,18 +64,18 @@ html {
     align-items: center;
 }
 
-.img_receitas {
+.card_img_top {
     width: 500px;
     margin-top: 20px;
     border-radius: 10px;
 }
 
-.ingrediente_receitas {
+.card_text {
     margin: 10px 0px;
     align-items: start;
 }
 
-.ingrediente_receitas ul li {
+.card_text ul li {
     list-style: disc;
     align-items: start;
     text-align: start;
@@ -87,19 +98,48 @@ html {
 
 .animation_desc {
     margin-bottom: 10px;
-    animation: desc_logo 1s infinite;
+    animation: desc_logo 2s infinite;
 }
 
 @keyframes desc_logo {
     0% {
-        transform: scale(1);
+        transform: translateX(0) scale(1);
     }
 
     50% {
-        transform: scale(1.6);
+        transform: translateY(40px) scale(1.2);
+        opacity: 0;
     }
 
     100% {
         transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 999.98px) {
+    .card_content {
+        margin-top: 120px;
+    }
+
+    .cards_receitas {
+        flex-wrap: wrap;
+    }
+
+    .card_img_top {
+        width: 470px;
+    }
+}
+
+@media (max-height: 1370.98px) {
+
+
+    .cards_receitas {
+        flex-wrap: wrap;
+    }
+
+    .card_img_top {
+        width: 470px;
     }
 }

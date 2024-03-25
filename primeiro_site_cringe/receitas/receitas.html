@@ -13,6 +13,10 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,24 +26,44 @@
 
 <body>
 
-    <section>
+    <section class="container-fluid p-0">
         <header>
-            <h3>menu</h3>
+            <!-- Barra de Navegação -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Tia Jurema</a>
+                    <div class="navbar" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/primeiro_site_cringe/receitas/home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"
+                                    href="/primeiro_site_cringe/receitas/receitas.html">Receitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/primeiro_site_cringe/receitas/cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
             <!-- Onde os itens serao apresentados-->
-            <div class="content-itens open-sans">
+            <div class=" content-itens open-sans">
 
-                <div class="receitas">
-                    <div class="receita_1 card">
-                        <div class="title_receitas">
+                <div class="cards_receitas">
+                    <div class="card_body card_content ">
+
+                        <div class="card_title">
                             <h2>Arroz de Couve-Flor</h2>
                         </div>
-                        <div class="img_receitas">
-                            <img src="/primeiro_site_cringe/receitas/imgs/arroz_de_COUVE-FLOR.jpg" class="img_receitas"
+                        <div class="card_img_top">
+                            <img src="/primeiro_site_cringe/receitas/imgs/arroz_de_COUVE-FLOR.jpg" class="card_img_top"
                                 alt="">
                         </div>
-                        <div class="ingrediente_receitas">
+                        <div class="card_text">
                             <ul>
                                 <li>Couve-flor</li>
                                 <li>Óleo ou manteiga</li>
@@ -72,17 +96,27 @@
 
                 </div>
 
-
             </div>
         </main>
-        <footer>
+        <footer class="bg-dark text-white">
             <div class="copy">
                 <h3>&copy;Jurema 2022</h3>
             </div>
         </footer>
     </section>
 
-    <script></script>
+    <!-- Bootstrap js -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
