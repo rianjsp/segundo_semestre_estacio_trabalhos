@@ -54,7 +54,7 @@
             <div class="container mt-5 mb-5">
                 <div class="content-cadastro">
                     <h1>Efetue seu cadastro</h1>
-                    <form method="post" action="/primeiro_site_cringe/receitas/processar_formulario.php">
+                    <form method="POST" action="processar_formulario.php">
                         <div class="mb-3">
                             <label for="inputNome" class="form-label">Nome</label>
                             <input type="text" name="nome" class="form-control" id="inputNome"
@@ -72,32 +72,32 @@
                                     placeholder="Digite seu CEP" maxlength="8" required>
                             </div>
                             <div class="col-md-8">
-                                <label for="inputRua" name="rua" class="form-label">Rua</label>
-                                <input type="text" class="form-control" id="inputRua"
+                                <label for="inputRua" class="form-label">Rua</label>
+                                <input type="text" name="rua" class="form-control" id="inputRua"
                                     placeholder="Digite o nome da sua rua" required>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-2">
-                                <label for="inputNumero" name="numero" class="form-label">N°</label>
-                                <input type="number" class="form-control" id="inputNumero" placeholder="Digite o número"
-                                    required>
+                                <label for="inputNumero" class="form-label">N°</label>
+                                <input type="number" name="numero" class="form-control" id="inputNumero"
+                                    placeholder="Digite o número" required>
                             </div>
                             <div class="col-md-4">
-                                <label for="inputComplemento" name="complemento" class="form-label">Complemento</label>
-                                <input type="text" class="form-control" id="inputComplemento"
+                                <label for="inputComplemento" class="form-label">Complemento</label>
+                                <input type="text" name="complemento" class="form-control" id="inputComplemento"
                                     placeholder="Digite o complemento" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="inputCidade" name="cidade" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="inputCidade"
+                                <label for="inputCidade" class="form-label">Cidade</label>
+                                <input type="text" name="cidade" class="form-control" id="inputCidade"
                                     placeholder="Digite o nome da sua cidade" required>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-2">
-                                <label for="inputUF" name="uf" class="form-label">UF</label>
-                                <input type="text" class="form-control" id="inputUF" placeholder="Digite a UF"
+                                <label for="inputUF" class="form-label">UF</label>
+                                <input type="text" name="uf" class="form-control" id="inputUF" placeholder="Digite a UF"
                                     maxlength="2" required>
                             </div>
                         </div>

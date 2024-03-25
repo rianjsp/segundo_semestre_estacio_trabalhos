@@ -1,0 +1,18 @@
+{
+    "name": "playe/primeiro_site_cringe",
+    "autoload": {
+        "psr-4": {
+            "Playe\\PrimeiroSiteCringe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rjzin",
+            "email": "bigriann18@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
