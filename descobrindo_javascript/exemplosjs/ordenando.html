@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando</title>
+
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Css link / Font Awesome / Icons-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="app container-fluid p-0 m-0 d-flex justify-content-center align-items-center">
+        <main class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+            <div class="content text-center">
+                <div class="form-group row justify-content-center align-items-center">
+                    <input type="number" class="form-control col-md-6" id="valor" required>
+                    <button type="button" class="btn btn-secondary col-md-4 ml-md-2 mt-2 mt-md-0" id="bt_add"
+                        onclick="add()">Adicionar</button>
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control" id="select_order">
+                        <option selected value="bubblesort">Bubble Sort</option>
+                        <option value="selectionSort">Selection Sort</option>
+                        <option value="quickSort">Quick Sort</option>
+                    </select>
+                </div>
+
+                <div class="form-group d-flex">
+                    <button type="button" class="btn btn-primary mr-2" onclick="ordenar()">Ordenar</button>
+                    <button type="button" class="btn btn-primary" onclick="misturar()">Misturar</button>
+                </div>
+            </div>
+            <!-- Fim do conteúdo de funções -->
+            <div class="app_amostrar d-flex">
+                <div
+                    class="content container-fluid p-0 m-0 d-flex justify-content-center align-items-center list mt-3 d-flex">
+                    <ul class="list-unstyled container row" id="valores"></ul>
+                </div>
+                <div
+                    class="content container-fluid p-0 m-0 d-flex justify-content-center align-items-center list mt-3 d-flex">
+                    <ul class="list-unstyled container row" id="amostrar"></ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+
+
+    <script src="ordenando.js"></script>
+
+    <!-- Bootstrap 4-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
