@@ -105,11 +105,13 @@ let itens_new = [];
 let itens_last = []
 let result;
 
+
 function add() {
     let ipt_valor = document.getElementById('valor').value;
     let display = document.getElementById('display');
 
-    display.innerHTML += ipt_valor + ', ';
+    if (ipt_valor) { 
+        display.innerHTML += ipt_valor + ', ';
 
     // Atualize o array 'itens' com os valores do display e elimina o iten vazio final
     itens = display.value.split(',').filter(item => item.trim() !== '');
@@ -117,17 +119,23 @@ function add() {
     // Converta os itens para números inteiros antes de adicionar ao array itens_new
     itens_new = itens.map(item => parseInt(item));
 
-    console.log(itens);
-    console.log(itens_new);
+
+    console.log('Aqui o array com os itens em tipo string e nao modificados ');
+    console.log(itens)
+    console.log('Aqui o array com itens do tipo number int, modificados ');
+    console.log(itens_new)
     
     return itens_new;
+    }
+    throw new Error('O campo input não contém nenhum número para ser adicionado!')
 }
 
 function ordenar() {
     let select = document.getElementById('select_order').value;
     if (select == 'bubblesort') { 
         result = bubbleSort(itens_new);
-        console.log(result);
+        console.log('Array ordenado com BubbleSort')
+        console.log(itens_new);
         
         // Atualize o conteúdo do textarea com os resultados ordenados
         document.getElementById('display').innerHTML = itens_new;
@@ -135,7 +143,8 @@ function ordenar() {
     }
      if (select == 'selectionSort') { 
         result = selectionSort(itens_new);
-        console.log(result);
+         console.log('Array ordenado com Selection Sort')
+         console.log(itens_new);
         
         // Atualize o conteúdo do textarea com os resultados ordenados
         document.getElementById('display').innerHTML = itens_new;
@@ -143,11 +152,13 @@ function ordenar() {
      }
     if (select == 'quickSort') { 
         result = quickSort(itens_new);
-        console.log(result);
+        console.log('Array ordenado com Quick Sort')
+        console.log(itens_new);
         
         // Atualize o conteúdo do textarea com os resultados ordenados
         document.getElementById('display').innerHTML = itens_new;
         return itens_new;
+        
     }
 }
 
@@ -157,5 +168,7 @@ function misturar() {
 
     // Atualiza o conteúdo do textarea com os resultados misturados e o novo array
     document.getElementById('display').innerHTML = itens_last.join(', ');
+    console.log('Array Misturado com o metodo Shuffle')
+    console.log(itens_last);
     return itens_last;    
 }

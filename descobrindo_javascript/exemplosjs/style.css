@@ -2,8 +2,39 @@
     margin: 0px;
     padding: 0px;
 }
-#display{
-    resize: none;
-    text-align: center;
-    color: brown;
+body, html{
+    background-color: rgb(122, 98, 98);
 }
+#display{
+   resize: vertical;
+    text-align: center;
+    color: rgb(37, 37, 37);
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0px 0px 20px;
+    overflow-y: auto;
+}
+
+/* Mudando a barra de rolagem vertical*/
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #b4b4b4; 
+}
+
+/* Cor do grip da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #000000; 
+}
+
+/* Estilizando a barra de rolagem no hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+/* Largura da barra de rolagem */
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1; 
