@@ -19,20 +19,15 @@ let swap = (vetor, a, b) => {
 
 
 // Funções de sorteamento - 2° Shuffle
-let shuffle = (vetor, n) => {
-    if (n <= vetor.length) {
-        for (let i = 0; i < n; i++) {
-            let ind_aleot = Math.floor(Math.random() * vetor.length);
-            let temp = vetor[ind_aleot];
-            vetor[ind_aleot] = vetor[i];
-            vetor[i] = temp;
-        }
-        return vetor;
-    } else {
-        console.log('Número de trocas não pode exceder o tamanho do array');
+let shuffle = (vetor) => {
+    for (let i = 0; i < vetor.length; i++) {
+        let ind_aleot = Math.floor(Math.random() * vetor.length);
+        let temp = vetor[ind_aleot];
+        vetor[ind_aleot] = vetor[i];
+        vetor[i] = temp;
     }
+    return vetor;
 }
-
 
 // Funções de sorteamento - 2° BubbleSort
 let bubbleSort = (vetor) => {
@@ -103,9 +98,11 @@ function partition(arr, left, right) {
 }
 
 
-// Funções Add Misturar e Ordenar
+// Funções Add Misturar e Ordenar, itens = lista de string, itens_new = lista de ints,
+// result = Somente para nortear o dev, itens_last = para manipulacao 
 let itens = [];
 let itens_new = [];
+let itens_last = []
 let result;
 
 function add() {
@@ -134,8 +131,31 @@ function ordenar() {
         
         // Atualize o conteúdo do textarea com os resultados ordenados
         document.getElementById('display').innerHTML = itens_new;
+        return itens_new
+    }
+     if (select == 'selectionSort') { 
+        result = selectionSort(itens_new);
+        console.log(result);
+        
+        // Atualize o conteúdo do textarea com os resultados ordenados
+        document.getElementById('display').innerHTML = itens_new;
+        return itens_new
+     }
+    if (select == 'quickSort') { 
+        result = quickSort(itens_new);
+        console.log(result);
+        
+        // Atualize o conteúdo do textarea com os resultados ordenados
+        document.getElementById('display').innerHTML = itens_new;
+        return itens_new;
     }
 }
 
+// Todos os casos estao retornando itens_new ordenada para manipulacao
+function misturar() { 
+    let itens_last = shuffle(itens_new);
 
-function misturar() { }
+    // Atualiza o conteúdo do textarea com os resultados misturados e o novo array
+    document.getElementById('display').innerHTML = itens_last.join(', ');
+    return itens_last;    
+}
