@@ -17,13 +17,14 @@
     <section class="app container-fluid p-0 m-0 d-flex justify-content-center align-items-center">
         <main class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
             <div class="content text-center">
+                <!-- Content para os itens de input e buttons-->
                 <div class="form-group row justify-content-center align-items-center">
                     <input type="number" class="form-control col-md-6" id="valor" required>
-                    <button type="button" class="btn btn-secondary col-md-4 ml-md-2 mt-2 mt-md-0" id="bt_add"
+                    <button type="button" class="btn btn-primary col-md-4 ml-md-2 mt-2 mt-md-0" id="bt_add"
                         onclick="add()">Adicionar</button>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group row justify-content-center align-items-center">
                     <select class="form-control" id="select_order">
                         <option selected value="bubblesort">Bubble Sort</option>
                         <option value="selectionSort">Selection Sort</option>
@@ -31,14 +32,16 @@
                     </select>
                 </div>
 
-                <div class="form-group d-flex">
+                <div class="form-group d-flex row justify-content-center align-items-center">
                     <button type="button" class="btn btn-primary mr-2" onclick="ordenar()">Ordenar</button>
                     <button type="button" class="btn btn-primary" onclick="misturar()">Misturar</button>
                 </div>
             </div>
-            <!-- Fim do conteúdo de funções -->
+
+            <!-- Inicio de onde sera mostrado os resultados -->
             <div class="app_amostrar d-flex">
-                <textarea id="display" cols="60" rows="5" disabled></textarea>
+                <textarea id="display" cols="60" rows="5" placeholder="Digite seus numeros e clique em adicionar."
+                    disabled></textarea>
             </div>
             </div>
         </main>
