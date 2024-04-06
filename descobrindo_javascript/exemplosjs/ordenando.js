@@ -137,7 +137,7 @@ function ordenar() {
         console.log('Array ordenado com BubbleSort')
         console.log(itens_new);
         
-        // Atualize o conteúdo do textarea com os resultados ordenados
+        // Atualizando o conteúdo do textarea com os resultados ordenados
         document.getElementById('display').innerHTML = itens_new;
         return itens_new
     }
@@ -146,7 +146,7 @@ function ordenar() {
          console.log('Array ordenado com Selection Sort')
          console.log(itens_new);
         
-        // Atualize o conteúdo do textarea com os resultados ordenados
+        // Atualizando o conteúdo do textarea com os resultados ordenados
         document.getElementById('display').innerHTML = itens_new;
         return itens_new
      }
@@ -155,7 +155,7 @@ function ordenar() {
         console.log('Array ordenado com Quick Sort')
         console.log(itens_new);
         
-        // Atualize o conteúdo do textarea com os resultados ordenados
+        // Atualizando o conteúdo do textarea com os resultados ordenados
         document.getElementById('display').innerHTML = itens_new;
         return itens_new;
         

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card {
+    width: 300px; /* Ajusta a largura dos cards */
+    margin: 10px; /* Adiciona margem entre os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+#pnlCatalogo {
+    padding: 20px;
+}
