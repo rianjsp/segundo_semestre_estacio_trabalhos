@@ -38,7 +38,7 @@ let shuffle = (vetor, n) => {
 let bubbleSort = (vetor) => {
 
     let tam = vetor.length
-    for (let i = 0; i < fim; i++) {
+    for (let i = 0; i < tam; i++) {
         for (let j = 0; j < tam - i - 1; j++) {
             if (vetor[j] > vetor[j + 1]) {
                 let temp = vetor[j];
@@ -104,31 +104,38 @@ function partition(arr, left, right) {
 
 
 // Funções Add Misturar e Ordenar
+let itens = [];
+let itens_new = [];
+let result;
+
 function add() {
-    let valor_ad = document.getElementById('valor').value;
-    let lista = document.getElementById('valores');
+    let ipt_valor = document.getElementById('valor').value;
+    let display = document.getElementById('display');
 
-    let novo_elem = document.createElement('li');
-    novo_elem.classList = 'row';
-    novo_elem.innerHTML = valor_ad;
+    display.innerHTML += ipt_valor + ', ';
 
-    // Adiciona o novo elemento à direita dos elementos existentes
-    lista.appendChild(novo_elem);
+    // Atualize o array 'itens' com os valores do display e elimina o iten vazio final
+    itens = display.value.split(',').filter(item => item.trim() !== '');
+
+    // Converta os itens para números inteiros antes de adicionar ao array itens_new
+    itens_new = itens.map(item => parseInt(item));
+
+    console.log(itens);
+    console.log(itens_new);
+    
+    return itens_new;
 }
 
 function ordenar() {
-    let lista = document.getElementById('valores');
-    let filhos = Array.from(lista.children);
-    let ord_tipo = document.getElementById('select_order').value;
-
-    if (ord_tipo === 'bubblesort') {
-        bubbleSort(filhos);
-        atualizarLista(lista, filhos);
+    let select = document.getElementById('select_order').value;
+    if (select == 'bubblesort') { 
+        result = bubbleSort(itens_new);
+        console.log(result);
+        
+        // Atualize o conteúdo do textarea com os resultados ordenados
+        document.getElementById('display').innerHTML = itens_new;
     }
 }
 
-function atualizarLista() {
-
-}
 
 function misturar() { }
