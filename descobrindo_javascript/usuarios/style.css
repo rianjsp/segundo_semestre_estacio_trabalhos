@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#usuarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+    justify-items: center !important;
+}

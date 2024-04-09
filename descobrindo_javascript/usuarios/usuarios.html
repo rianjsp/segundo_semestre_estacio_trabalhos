@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+
+    <!-- Folha de estilo css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+</head>
+
+<body class="container bg-warning p-0 m-0">
+
+    <!-- Inicio do app-->
+    <div id="usuarios" class="container-fluid d-flex justify-content-center align-items-center p-0 ml-5">
+
+        <!-- Tags semanticas para ficar de melho visualização do código-->
+        <header class="py-4">
+            <h1 class="">Usuários de Teste via REST</h1>
+            <h5 class="text-white">Os Usuários deste exemplo são fornecidos pela API de testes reqres.in </h5>
+        </header>
+
+        <!-- Aqui começa a parte principal - Os cards-->
+        <main class="">
+            <div class="row ">
+                <div v-for="(user, index) in users" :key="index" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+
+                    <div class="card ">
+
+                        <img :src="user.avatar" class="card-img-top" alt="UserAvatar">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>{{user.first_name}} {{user.last_name}}</strong></h5>
+                            <p class="card-text">{{user.email}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script>
+        new Vue({
+            el: '#usuarios',
+            data() {
+                return {
+                    users: []
+                };
+            },
+            mounted() {
+                this.loadUsers();
+            },
+            methods: {
+                // Uma boa prática que notei, seria o uso de Async Await neste código.
+                loadUsers() {
+                    fetch(`https://reqres.in/api/users?per_page=19`)
+                        .then(response => response.json())
+                        .then(data => {
+                            this.users = data.data;
+
+                            // Log para testes
+                            console.log(data.data[0])
+                        })
+                        .catch(error => {
+                            console.error(`Houve um erro ao carregar os usuários ${error}`);
+                        })
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>
