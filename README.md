@@ -35,3 +35,4 @@ Implementação de Servidor baseado em Express e Mongoose, acessando o banco de 
 
 **Back-end:** Node, Express, MongoDB, Mongoose, Typescript
 
+## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
