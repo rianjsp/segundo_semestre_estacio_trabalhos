@@ -1,4 +1,4 @@
-## Erros encontrados no código por mim
+## Erros encontrados no código por mim 
 -- 1° 08/05> Alguns erros em [file -> receitas] eu não soube corrigir, defini o uso do text-area para ser como um display de tela, por achar mais interessante o uso, encontrei dificuldades no uso do Child Elments, nada que comprometa o codigo afinal esta tudo documentado.
 
 ## Atualizações
@@ -18,3 +18,4 @@ Finalizei todos os pedidos e objetivos da missão pratica de nivel 2, objetivos 
 ## Objetivo
 -- Com base nos objetivos de prática Exemplos de diferentes formas de utilização do Java Script no lado cliente, uso de JSON na transmissão de dados e framework VUE JS. Como estudado no Tema 2.
 
+## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
