@@ -51,15 +51,15 @@ export default function LivroDados() {
             <form onSubmit={incluir}>
                 <div className="form-group">
                     <label htmlFor="titulo">Título</label>
-                    <input type="text" id="titulo" className="form-control" value={titulo} onChange={(e) => setTitulo(e.target.value)} />
+                    <input type="text" id="titulo" className="form-control" value={titulo} onChange={(e) => setTitulo(e.target.value)} required/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="resumo">Resumo</label>
-                    <textarea id="resumo" maxLength={400} className="form-control" value={resumo} onChange={(e) => setResumo(e.target.value)} />
+                    <textarea id="resumo" maxLength={400} className="form-control" value={resumo} onChange={(e) => setResumo(e.target.value)} required/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="editora">Editora</label>
-                    <select id="editora" className="form-control" value={codEditora} onChange={tratarCombo}>
+                    <select id="editora" className="form-control" value={codEditora} onChange={tratarCombo} required>
                         {opcoes.map(opcao => (
                             <option key={opcao.value} value={opcao.value}>{opcao.text}</option>
                         ))}
@@ -67,7 +67,7 @@ export default function LivroDados() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="autores">Autores (1 por linha)</label>
-                    <textarea id="autores" className="form-control" value={autores} onChange={(e) => setAutores(e.target.value)} />
+                    <textarea id="autores" className="form-control" value={autores} onChange={(e) => setAutores(e.target.value)} required/>
                 </div>
                 
                 <button type="submit" className="btn btn-primary mt-2">Salvar dados</button>
