@@ -50,15 +50,15 @@ export default function LivroDados() {
             <h2>Dados do livro</h2>
             <form onSubmit={incluir}>
                 <div className="form-group">
-                    <label htmlFor="titulo">Título:</label>
+                    <label htmlFor="titulo">Título</label>
                     <input type="text" id="titulo" className="form-control" value={titulo} onChange={(e) => setTitulo(e.target.value)} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="resumo">Resumo:</label>
-                    <textarea id="resumo" className="form-control" value={resumo} onChange={(e) => setResumo(e.target.value)} />
+                    <label htmlFor="resumo">Resumo</label>
+                    <textarea id="resumo" maxLength={400} className="form-control" value={resumo} onChange={(e) => setResumo(e.target.value)} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="editora">Editora:</label>
+                    <label htmlFor="editora">Editora</label>
                     <select id="editora" className="form-control" value={codEditora} onChange={tratarCombo}>
                         {opcoes.map(opcao => (
                             <option key={opcao.value} value={opcao.value}>{opcao.text}</option>
@@ -70,7 +70,7 @@ export default function LivroDados() {
                     <textarea id="autores" className="form-control" value={autores} onChange={(e) => setAutores(e.target.value)} />
                 </div>
                 
-                <button type="submit" className="btn btn-primary">Salvar dados</button>
+                <button type="submit" className="btn btn-primary mt-2">Salvar dados</button>
             </form>
         </main>
     );
