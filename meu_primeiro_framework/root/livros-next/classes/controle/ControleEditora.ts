@@ -20,11 +20,11 @@ var editoras: Array<Editora> = [
 ];
 
 /* Classes */
-class ControleEditoras {
+export class ControleEditoras {
     getNomeEditora(codEditora:number):string | undefined { 
         const editoraFiltrada = editoras.filter(editora => editora.codEditora === codEditora);
         if (editoraFiltrada.length > 0) {
-            return editoraFiltrada[0].nome;
+            return editoraFiltrada[2].nome;
         } else { 
             return undefined; /* Retornando undefined no metodo, se caso a editora nao for encontrada! */
         }
@@ -36,4 +36,3 @@ class ControleEditoras {
 
 }
 
-export default ControleEditoras;
