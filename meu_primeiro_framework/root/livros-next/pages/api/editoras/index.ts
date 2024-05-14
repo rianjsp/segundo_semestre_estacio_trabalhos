@@ -11,10 +11,10 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
       res.status(200).json(editoras);
     } else {
       res.setHeader('Allow', ['GET']);
-      res.status(405).end(`Method ${req.method} Not Allowed`);
+      res.status(405).end(`método ${req.method} não permitido`);
     }
   } catch (error) {
     console.error(error);
-    res.status(500).end();
+    res.status(500).end(`exceção ocorrida no servidor`);
   }
 };

@@ -14,7 +14,6 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
     }
   } catch (error) {
     console.error(error);
-    res.status(500).end(`exceção ocorrida no
-servidor`);
+    res.status(500).end(`exceção ocorrida no servidor`);
   }
 };

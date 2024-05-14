@@ -24,9 +24,9 @@ export class ControleEditoras {
     getNomeEditora(codEditora:number):string | undefined { 
         const editoraFiltrada = editoras.filter(editora => editora.codEditora === codEditora);
         if (editoraFiltrada.length > 0) {
-            return editoraFiltrada[2].nome;
+            return editoraFiltrada[0].nome;
         } else { 
-            return undefined; /* Retornando undefined no metodo, se caso a editora nao for encontrada! */
+            return undefined;
         }
     };
     getEditoras() { 

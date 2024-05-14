@@ -1,6 +1,6 @@
 // pages/_app.tsx
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/global.css';
+import '../src/app/globals.css';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
