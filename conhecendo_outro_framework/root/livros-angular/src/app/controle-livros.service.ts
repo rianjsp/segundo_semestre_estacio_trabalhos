@@ -9,22 +9,25 @@ import { Livro } from './livro'
 export class ControleLivrosService {
 
   private livros: Array<Livro> = [
-    {codigo: 1,
-    codEditora: 1,
-    titulo: 'Mar de JavaScript e uma jangada de Python',
-    resumo: 'Descepções de um jovem com a ti',
+    {
+      codigo: 1,
+      codEditora: 1,
+      titulo: 'Mar de JavaScript e uma jangada de Python',
+      resumo: 'Descepções de um jovem com a ti',
       autores: ['Alexander', 'Rian', 'Juan']
     },
-    {codigo: 10,
-    codEditora: 2,
-    titulo: 'Rosas Perfumadas que não cheiram',
-    resumo: 'Gravidade, agrava a idade!',
+    {
+      codigo: 10,
+      codEditora: 2,
+      titulo: 'Rosas Perfumadas que não cheiram',
+      resumo: 'Gravidade, agrava a idade!',
       autores: ['Rexona', 'Mehlor', 'Rolom']
     },
-    {codigo: 100,
-    codEditora: 3,
-    titulo: 'Asas de um menino flutuante',
-    resumo: 'Era uma vez um trem quem andava na agua',
+    {
+      codigo: 100,
+      codEditora: 3,
+      titulo: 'Asas de um menino flutuante',
+      resumo: 'Era uma vez um trem quem andava na agua',
       autores: ['Junior', 'Donwley', 'Robert']
     }
   ];
@@ -37,7 +40,7 @@ export class ControleLivrosService {
   };
 
   incluir(novoLivro: Livro): void { 
-    const maiorCodigo = this.livros.reduce((max, livro) => livro.codLivro > max ? livro.codLivro : max, 0);
+    const maiorCodigo = this.livros.reduce((max, livro) => livro.codigo > max ? livro.codigo : max, 0);
     novoLivro.codigo = maiorCodigo + 1;
     this.livros.push(novoLivro);
   };
