@@ -1,6 +1,6 @@
 export class Livro {
 
-    // Declarando os campos
+    // Declaração dos campos
     codigo: number;
     codEditora: number;
     titulo: string;
