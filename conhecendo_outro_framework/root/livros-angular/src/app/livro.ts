@@ -1,14 +1,15 @@
 export class Livro {
 
-  // Declaração das variaveis
+  // Declaração de variaveis
   codigo: number;
   codEditora: number;
   titulo: string;
   resumo: string;
-  autores: string;
+  autores: string[];
+
 
   // Construção
-  constructor(codigo: number, codEditora: number, titulo: string, resumo: string, autores: string) {
+  constructor(codigo: number ,codEditora: number, titulo: string, resumo: string, autores: string[]) {
     this.codigo = codigo;
     this.codEditora = codEditora;
     this.titulo = titulo;
