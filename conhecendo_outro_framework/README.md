@@ -19,9 +19,9 @@
 
 ## `Resultados esperados da prática`
 
-- `É importante que o código seja organizado`
-- `Explore as funcionalidades do Visual Studio Code para facilitar o desenvolvimento da prática`
-- `Nessa missão, é esperado que você demonstre habilidades básicas para`
+- É importante que o código seja organizado
+- Explorar as funcionalidades do Visual Studio Code para facilitar o desenvolvimento da prática
+- Nessa missão, é esperado que você demonstre habilidades básicas para:
     - `construção de serviços e componentes no Angular`
 
     - `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna`
