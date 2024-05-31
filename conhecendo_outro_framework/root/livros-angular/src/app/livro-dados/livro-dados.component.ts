@@ -27,11 +27,12 @@ export class LivroDadosComponent implements OnInit {
     this.editoras = this.servEditora.getEditoras()
   }
 
-  incluir = () => {
-    this.livro.autores = this.autoresForm.split("\n")
-    this.servLivros.incluir(this.livro)
-    this.router.navigateByUrl("/lista")
-  }
+  incluir(): void {
+  this.livro.autores = this.autoresForm.split("\n");
+  this.servLivros.incluir(this.livro);
+  this.router.navigateByUrl("/lista");
+}
+
 
   cancelar(): void {
     this.router.navigateByUrl("/lista")
