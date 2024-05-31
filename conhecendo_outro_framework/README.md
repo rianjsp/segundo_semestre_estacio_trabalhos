@@ -17,4 +17,13 @@
 - Implementar a navegação interna do front-end com base em Angular
 
 
+## `Resultados esperados da prática`
+
+- É importante que o código seja organizado;
+- Explore as funcionalidades do Visual Studio Code para facilitar o desenvolvimento da prática;
+- `Nessa missão, é esperado que você demonstre habilidades básicas para`
+    a. `construção de serviços e componentes no Angular`
+
+    b. `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna`
+
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
