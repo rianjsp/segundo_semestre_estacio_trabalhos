@@ -1,9 +1,3 @@
-## Inicializando o projeto
-
-1° Iniciando o repo dia 06/05
-
-
-
 ## Objetivo
 
 -- A partir dos objetivos listados abaixo, no final do projeto, você terá criado duas versões
