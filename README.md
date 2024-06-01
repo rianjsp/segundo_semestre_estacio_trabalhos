@@ -1,5 +1,5 @@
 ## Olá!! Meu nome e Rian joseph Ramos Felizardo 
-- `Curso *_Desenvolvimento de Sistemas FullStack_* pela Faculdade Estácio de Sá`
+- `Curso **_Desenvolvimento de Sistemas FullStack_** pela Faculdade Estácio de Sá`
 
 - `Neste repositório consta meus _trabalhos do 2 semestre_ ... `
 - Front-end e Back-end 
