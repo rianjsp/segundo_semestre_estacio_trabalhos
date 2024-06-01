@@ -10,10 +10,13 @@
 - `controle-livros.service`: Serviço Angular para gerenciar os livros.
 - `controle-editora.service`: Serviço Angular para gerenciar as editoras.
 
+--
+
 |            Aluno            |     Matrícula    |          Curso            |
 |-----------------------------|------------------|---------------------------|
 | Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
 
+--
 
 ## Objetivos do projeto
 - Implementar serviços injetáveis para o Angular, na sintaxe Type Script
