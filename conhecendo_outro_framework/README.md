@@ -55,6 +55,10 @@
   - Executar com o comando ng serve.
   - Acessar o endereço http://localhost:4200/ através de um navegador.
 
+|            Aluno            |     Matrícula    |          Curso            |
+|-----------------------------|------------------|---------------------------|
+| Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
+
 
 ## Imgs do prj
 ![image](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/4d40b7a0-7f5f-406a-9cf2-2f901f84dc22)
