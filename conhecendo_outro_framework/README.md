@@ -11,7 +11,7 @@
 - `controle-editora.service`: Serviço Angular para gerenciar as editoras.
 
 --
-
+                            `INFORMAÇÕES ACADEMICAS`
 |            Aluno            |     Matrícula    |          Curso            |
 |-----------------------------|------------------|---------------------------|
 | Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
