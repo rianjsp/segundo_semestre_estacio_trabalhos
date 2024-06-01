@@ -7,4 +7,4 @@
 
 |            Aluno            |     Matrícula    |          Curso            |
 |-----------------------------|------------------|---------------------------|
-| Rian Joseph Ramos Felizardo | 202202923931     | Desenvolvimento Full Stack|
+| Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
