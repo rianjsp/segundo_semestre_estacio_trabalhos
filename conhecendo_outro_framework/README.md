@@ -2,11 +2,13 @@
 - `root/livros-angular`: Pasta raiz do projeto.
 - `src/app`: Contém os componentes, serviços e outros artefatos do Angular.
 - `app.component`: O componente raiz que define a estrutura principal da aplicação.
+- `app/router`: Contém o modulo routing do projeto.
 - `app-routing.module`: O arquivo de configuração do roteamento.
 - `livro-lista`: Componente para exibir a lista de livros.
 - `livro-dados`: Componente para o formulário de cadastro de livros.
 - `livro.ts`: Classe TypeScript que define a estrutura do livro.
 - `editora.ts`: Classe TypeScript que define a estrutura da editora.
+- `app/controle`: Contém os serviços de controle.
 - `controle-livros.service`: Serviço Angular para gerenciar os livros.
 - `controle-editora.service`: Serviço Angular para gerenciar as editoras.
 
