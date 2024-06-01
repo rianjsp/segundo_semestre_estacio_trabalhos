@@ -69,5 +69,6 @@
     - `construção de serviços e componentes no Angular`
 
     - `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna`
+ 
 
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
