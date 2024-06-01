@@ -44,7 +44,7 @@
   - Configurar os serviços para injeção de dependência via construtor na classe AppModule.
   - Incluir as dependências do Bootstrap no arquivo index.html.
 - `Procedimento 2`
-  - Configurar a biblioteca padrão de formulários adicionando FormsModule ao vetor imports na classe AppModule.
+  - Configurar a biblioteca padrão de formulários adicionando `FormsModule` ao vetor imports na classe `AppModule`.
   - Configuração de Roteamento
       - Configurar o roteamento no arquivo app-routing.module.ts.
       - Modificar o template de AppComponent conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
