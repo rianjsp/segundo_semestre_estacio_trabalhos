@@ -1,5 +1,9 @@
-# `Missão Prática | Nível 4 | Mundo 2` ![estacio](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/00297e7b-cfcb-4065-82c3-40eb15cbcbcd)
+![estacio](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/00297e7b-cfcb-4065-82c3-40eb15cbcbcd) 
+|            Aluno            |     Matrícula    |          Curso            |
+|-----------------------------|------------------|---------------------------|
+| Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
 
+# `Missão Prática | Nível 4 | Mundo 2` 
 
 ## Estrutura do Projeto de implementação Angular.  
 - `root/livros-angular`: Pasta raiz do projeto.
@@ -16,10 +20,7 @@
 - `controle-editora.service`: Serviço de controle Angular para gerenciar as editoras.
 
 
-#                            `INFORMAÇÕES ACADEMICAS`
-|            Aluno            |     Matrícula    |          Curso            |
-|-----------------------------|------------------|---------------------------|
-| Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
+
 
 
 
