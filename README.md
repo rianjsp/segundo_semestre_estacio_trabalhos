@@ -1,20 +1,7 @@
 ## Olá!! Meu nome e Rian joseph Ramos Felizardo 
-- `Curso _Desenvolvimento de Sistemas FullStack_ pela Faculdade Estácio de Sá`
+- `Curso *Desenvolvimento de Sistemas FullStack* pela Faculdade Estácio de Sá`
 
-- `Neste repositório consta meus trabalhos do 2 semestre ... `
-- Front-end e Back-end 
-- (ExpressJS, ReactJS, Vuejs, Angular...)
-![javascript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg)
-
-
-- *Me encontre em...* 
-- `bigriann18@gmail.com`
-- `https://www.linkedin.com/in/rian-joseph-946506239/`
-- `https://www.instagram.com/rjsp_1/`
-
-## Minha Loja de Hardwares:
-
-- https://linktr.ee/josph
+- `Neste repositório se encontra todos os meus trabalhos do 2 semestre ... `
 
 ## `Resumo`
 
@@ -27,5 +14,20 @@
 - `Implementação de front-end web com base no framework Angular, utilizando serviços e componentes na sintaxe Type Script.`
 
 - `Implementação de Servidor baseado em Express e Mongoose, acessando o banco de dados MongoDB, e front-ends baseados em React JS, Next JS e Angular.`
+
+- *Front-end e Back-end - (ExpressJS, ReactJS, Vuejs, Angular...)*
+![javascript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg)
+
+
+- *Contato comigo por* 
+- `bigriann18@gmail.com`
+- `https://www.linkedin.com/in/rian-joseph-946506239/`
+- `https://www.instagram.com/rjsp_1/`
+
+## Minha Loja de Hardwares:
+
+- *https://linktr.ee/josph*
+
+
 
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
