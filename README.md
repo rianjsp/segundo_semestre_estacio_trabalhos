@@ -1,15 +1,13 @@
-👋 Olá, Meu nome e Rian joseph Ramos Felizardo, curso Desenvolvimento de Sistemas FullStack pela Faculdade Estácio de Sá
+## Olá!! Meu nome e Rian joseph Ramos Felizardo 
+## Curso *_Desenvolvimento de Sistemas FullStack_* pela Faculdade Estácio de Sá
 
-👀 Neste repositório consta meus trabalhos do 2 semestre ... 
-• Front-end e Back-end 
-
-🌱 Estudando as stacks do semestre: 
-JavaScript e Frameworks: 
-(ExpressJS, ReactJS, Vuejs...)
+## Neste repositório consta meus _trabalhos do 2 semestre ..._ 
+- Front-end e Back-end 
+- (ExpressJS, ReactJS, Vuejs, Angular...)
 ![javascript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg)
 
 
-📫 Me encontre em... 
+## *Me encontre em...* 
 • bigriann18@gmail.com 
 • https://www.linkedin.com/in/rian-joseph-946506239/
 • https://www.instagram.com/rjsp_1/
