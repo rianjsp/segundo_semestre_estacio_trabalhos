@@ -38,19 +38,19 @@
   - Criar o controlador de livros como serviço do Angular com ng g s ControleLivros --skip-tests.
   - Criar o componente LivroLista com ng g c LivroLista --skip-tests.
   - Criar o componente LivroDados com ng g c LivroDados --skip-tests.
-  - Codificar as entidades do sistema (Editora e Livro) conforme especificado.
-  - Codificar o controlador de editoras (ControleEditoraService) conforme especificado.
-  - Codificar o controlador de livros (ControleLivrosService) conforme especificado.
+  - Codificar as entidades do sistema (Editora e Livro) conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
+  - Codificar o controlador de editoras (ControleEditoraService) conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
+  - Codificar o controlador de livros (ControleLivrosService) conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
   - Configurar os serviços para injeção de dependência via construtor na classe AppModule.
   - Incluir as dependências do Bootstrap no arquivo index.html.
 - `Procedimento 2`
   - Configurar a biblioteca padrão de formulários adicionando FormsModule ao vetor imports na classe AppModule.
   - Configuração de Roteamento
       - Configurar o roteamento no arquivo app-routing.module.ts.
-      - Modificar o template de AppComponent conforme especificado.
+      - Modificar o template de AppComponent conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
   - Implementação do Componente LivroDados
-      - Definir a classe LivroDadosComponent conforme especificado.
-      - Implementar o template HTML de LivroDadosComponent conforme especificado [aqui](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
+      - Definir a classe LivroDadosComponent conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
+      - Implementar o template HTML de LivroDadosComponent conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
 - `Execução`
   - Executar com o comando ng serve.
   - Acessar o endereço http://localhost:4200/ através de um navegador.
