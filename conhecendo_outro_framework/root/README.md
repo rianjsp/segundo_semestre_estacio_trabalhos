@@ -61,14 +61,13 @@
   - Executar o comando ng serve.
   - Acessar o endereço http://localhost:4200/.
  
-## `Resultados esperados da prática`
+## `Resultados obtidos`
 
-- É importante que o código seja organizado
-- Explorar as funcionalidades do Visual Studio Code para facilitar o desenvolvimento da prática
-- Nessa missão, é esperado que você demonstre habilidades básicas para:
-    - `construção de serviços e componentes no Angular`
-
-    - `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna`
+- O código está bastante organizado e documentado sem poluição.
+- Nessa missão, eu obtive experiência em:
+    - `construção de serviços, artefatos e componentes no Angular`
+    - `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna com o Rounting`
+    - `implementação e utilização de codigo typescript`
+    - `implementação de serviços injetáveis para gerenciamento de dados`
  
-
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
