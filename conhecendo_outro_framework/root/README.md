@@ -1,4 +1,4 @@
-![estacio](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/00297e7b-cfcb-4065-82c3-40eb15cbcbcd) 
+
 |            Aluno            |     Matrícula    |          Curso            |
 |-----------------------------|------------------|---------------------------|
 | Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
