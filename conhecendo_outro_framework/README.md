@@ -26,7 +26,7 @@
 
     - `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna`
 
-## `*Procedimentos*`
+## *Procedimentos*
 - `Procedimento 1`
   - Criar Projeto e Entidades Angular
   - Execute o comando ng new livros-angular.
