@@ -1,5 +1,5 @@
-# `Missão Prática | Nível 4 | Mundo 2`
-![estacio](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/00297e7b-cfcb-4065-82c3-40eb15cbcbcd)
+# `Missão Prática | Nível 4 | Mundo 2` ![estacio](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/00297e7b-cfcb-4065-82c3-40eb15cbcbcd)
+
 
 ## Estrutura do Projeto de implementação Angular.  
 - `root/livros-angular`: Pasta raiz do projeto.
