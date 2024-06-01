@@ -29,31 +29,31 @@
 ## *Procedimentos*
 - `Procedimento 1`
   - Criar Projeto e Entidades Angular
-  - Execute o comando ng new livros-angular.
-  - Escolha Angular Routing como sim e folhas de estilo CSS comum.
-  - Entre no diretório do projeto com cd livros-angular.
-  - Crie a classe Livro com ng g class Livro --skip-tests.
-  - Crie a classe Editora com ng g class Editora --skip-tests.
-  - Crie o controlador de editoras como serviço do Angular com ng g s ControleEditora --skip-tests.
-  - Crie o controlador de livros como serviço do Angular com ng g s ControleLivros --skip-tests.
-  - Crie o componente LivroLista com ng g c LivroLista --skip-tests.
-  - Crie o componente LivroDados com ng g c LivroDados --skip-tests.
-  - Codifique as entidades do sistema (Editora e Livro) conforme especificado.
-  - Codifique o controlador de editoras (ControleEditoraService) conforme especificado.
-  - Codifique o controlador de livros (ControleLivrosService) conforme especificado.
-  - Configure os serviços para injeção de dependência via construtor na classe AppModule.
-  - Inclua as dependências do Bootstrap no arquivo index.html.
+  - Executar o comando ng new livros-angular.
+  - Escolher Angular Routing como sim e folhas de estilo CSS comum.
+  - Entrar no diretório do projeto com cd livros-angular.
+  - Criar a classe Livro com ng g class Livro --skip-tests.
+  - Criar a classe Editora com ng g class Editora --skip-tests.
+  - Criar o controlador de editoras como serviço do Angular com ng g s ControleEditora --skip-tests.
+  - Criar o controlador de livros como serviço do Angular com ng g s ControleLivros --skip-tests.
+  - Criar o componente LivroLista com ng g c LivroLista --skip-tests.
+  - Criar o componente LivroDados com ng g c LivroDados --skip-tests.
+  - Codificar as entidades do sistema (Editora e Livro) conforme especificado.
+  - Codificar o controlador de editoras (ControleEditoraService) conforme especificado.
+  - Codificar o controlador de livros (ControleLivrosService) conforme especificado.
+  - Configurar os serviços para injeção de dependência via construtor na classe AppModule.
+  - Incluir as dependências do Bootstrap no arquivo index.html.
 - `Procedimento 2`
-  - Configure a biblioteca padrão de formulários adicionando FormsModule ao vetor imports na classe AppModule.
+  - Configurar a biblioteca padrão de formulários adicionando FormsModule ao vetor imports na classe AppModule.
   - Configuração de Roteamento
-      - Configure o roteamento no arquivo app-routing.module.ts.
-      - Modifique o template de AppComponent conforme especificado.
+      - Configurar o roteamento no arquivo app-routing.module.ts.
+      - Modificar o template de AppComponent conforme especificado.
   - Implementação do Componente LivroDados
-      - Defina a classe LivroDadosComponent conforme especificado.
-      - Implemente o template HTML de LivroDadosComponent conforme especificado.
+      - Definir a classe LivroDadosComponent conforme especificado.
+      - Implementar o template HTML de LivroDadosComponent conforme especificado [aqui](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
 - `Execução`
-  - Execute com o comando ng serve.
-  - Acesse o endereço http://localhost:4200/ através de um navegador.
+  - Executar com o comando ng serve.
+  - Acessar o endereço http://localhost:4200/ através de um navegador.
 
 
 ## Imgs do prj
