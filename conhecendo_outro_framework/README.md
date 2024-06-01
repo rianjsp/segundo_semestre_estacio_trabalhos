@@ -60,7 +60,7 @@
       - Definir a classe LivroDadosComponent conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
       - Implementar o template HTML de LivroDadosComponent conforme especificado: [Clique](https://sway.cloud.microsoft/s/FsURgWIC7pni5Tll/embed).
 - `Execução`
-  - Executar com o comando ng serve.
-  - Acessar o endereço http://localhost:4200/ através de um navegador.
+  - Executar o comando ng serve.
+  - Acessar o endereço http://localhost:4200/.
 
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
