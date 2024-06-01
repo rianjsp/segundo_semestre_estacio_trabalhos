@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ControleEditoraService } from '../controle-editora.service';
-import { ControleLivrosService } from '../controle-livros.service';
+import { ControleEditoraService } from '../controle/controle-editora.service';
+import { ControleLivrosService } from '../controle/controle-livros.service';
 import { Editora } from '../editora';
 import { Livro } from '../livro';
 
+// Inicializando o Componente para listar livros
 @Component({
   selector: 'app-livro-lista',
   templateUrl: './livro-lista.component.html',
@@ -13,11 +14,13 @@ export class LivroListaComponent implements OnInit {
   editoras: Array<Editora> = []
   livros: Livro[] = []
 
+  // Construtor com injeção de dependencias, e Serviços de controle
   constructor(
     private servEditora: ControleEditoraService,
     private servLivros: ControleLivrosService
   ) {}
 
+  // Inicialização das Funções
   ngOnInit(): void {
     this.editoras = this.servEditora.getEditoras()
     this.livros = this.servLivros.obterLivros()

@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Editora} from './editora'
+import { Editora} from '../editora'
 
 
+// Service Editora
 @Injectable({
   providedIn: "root",
 })
 export class ControleEditoraService {
   editoras: Editora[]
 
+
+  // Contruor com as editoras da mesma forma que no sway
   constructor() {
     this.editoras = [
       {
@@ -25,6 +28,8 @@ export class ControleEditoraService {
     ]
   }
 
+
+  // Funções
   getEditoras(): Editora[] {
     return this.editoras
   }

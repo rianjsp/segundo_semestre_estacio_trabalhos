@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Livro } from './livro';
+import { Livro } from '../livro';
 
+
+// Service livros
 @Injectable({
   providedIn: "root",
 })
 export class ControleLivrosService {
   livros: Livro[];
 
+  // Construtor dos livros com a mesma base das fotos no sway
   constructor() {
     this.livros = [
       {
@@ -36,10 +39,14 @@ export class ControleLivrosService {
     ];
   }
 
+
+  // Funções
   obterLivros = (): Livro[] => {
     return this.livros;
   };
 
+
+  // Função incluir com verificação se os campos titulo e autores estão preenchidos
   incluir = (livro: Livro): void => {
     if (!livro.titulo.trim() || livro.autores.length === 0) {
       throw new Error("Preencha os campos antes de incluir os livros.");
