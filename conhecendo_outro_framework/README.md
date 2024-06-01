@@ -60,9 +60,4 @@
   - Executar com o comando ng serve.
   - Acessar o endereço http://localhost:4200/ através de um navegador.
 
-## Imgs do prj
-![image](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/4d40b7a0-7f5f-406a-9cf2-2f901f84dc22)
-![image](https://github.com/rianjsp/segundo_semestre_estacio_trabalhos/assets/116752833/688ea284-efa9-4996-99d8-0a1f991854a6)
-
-
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
