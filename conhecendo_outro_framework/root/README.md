@@ -1,4 +1,11 @@
-## Estrutura do Projeto de implementação Angular. `Projeto nivel 4 - Conhecendo outro Framework`. 
+# `Missão Prática | Nível 4 | Mundo 2` 
+- `POLO BARREIRO - BELO HORIZONTE - MG `
+- `Conhecendo outro framework – 2024.3 – 1 Semestre letivo`
+- `Aluno`: `Rian Joseph Ramos Felizardo`
+- `Matrícula`: `202202923931`
+- `Turma`: `2023.1`
+
+## Estrutura do Projeto de implementação Angular.  
 - `root/livros-angular`: Pasta raiz do projeto.
 - `src/app`: Contém os componentes, serviços e outros itens do Angular.
 - `app.component`: O componente raiz que define a estrutura principal da aplicação.
@@ -13,10 +20,7 @@
 - `controle-editora.service`: Serviço de controle Angular para gerenciar as editoras.
 
 
-#                            `INFORMAÇÕES ACADEMICAS`
-|            Aluno            |     Matrícula    |          Curso            |
-|-----------------------------|------------------|---------------------------|
-| Rian Joseph Ramos Felizardo | 202202923931     |       `Turma 2023.1`      |
+
 
 
 
@@ -57,13 +61,13 @@
   - Executar o comando ng serve.
   - Acessar o endereço http://localhost:4200/.
  
-## `Resultados esperados da prática`
+## `Resultados obtidos`
 
-- É importante que o código seja organizado
-- Explorar as funcionalidades do Visual Studio Code para facilitar o desenvolvimento da prática
-- Nessa missão, é esperado que você demonstre habilidades básicas para:
-    - `construção de serviços e componentes no Angular`
-
-    - `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna`
-
+- O código está bastante organizado e documentado sem poluição.
+- Nessa missão, eu obtive experiência em:
+    - `construção de serviços, artefatos e componentes no Angular`
+    - `utilização do sistema de gerenciamento de formulários do Angular, bem como o sistema de navegação interna com o Rounting`
+    - `implementação e utilização de codigo typescript`
+    - `implementação de serviços injetáveis para gerenciamento de dados`
+ 
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
