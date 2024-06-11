@@ -1,15 +1,14 @@
 const banco = require('./conexao');
 const Schema = banco.Schema;
 
-const LivroSchema = new Schema = { 
-    _id: { type: Number, required: True },
-    titulo: { type: String, required: True },
-    codEditora: { type: String, required: True },
-    resumo: { type: String, required: True },
-    autores: { type: String, required: True }
+const LivroSchema = new Schema({ 
+    _id: { type: Number, required: true },
+    titulo: { type: String, required: true },
+    codEditora: { type: String, required: true },
+    resumo: { type: String, required: true },
+    autores: [{ type: String, required: true }]
+});
 
-}
+const Livro = banco.model('Livro', LivroSchema, 'livros');
 
-const Livro = banco.models('Livro', LivroSchema, 'livros')
-
-module.export = Livro;
+module.exports = Livro;
