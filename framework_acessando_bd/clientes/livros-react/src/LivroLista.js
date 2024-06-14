@@ -5,33 +5,26 @@ import ControleEditora from './controle/ControleEditora';
 const controleLivro = new ControleLivro();
 const controleEditora = new ControleEditora();
 
-async function obterLivros() {
-    const livros = await controleLivro.obterLivros();
-    return livros;
-}
-
 export default function LivroLista() {
     const [livros, setLivros] = useState([]);
     const [carregado, setCarregado] = useState(false);
 
     useEffect(() => {
-        async function fetchLivros() {
-            const livros = await obterLivros();
+        controleLivro.obterLivros().then((livros) => {
             setLivros(livros);
             setCarregado(true);
-        }
-
-        fetchLivros();
+        });
     }, [carregado]);
 
-    const excluir = async (codigoLivro) => {
-        await controleLivro.excluirLivros(codigoLivro);
-        setCarregado(false);
+    const excluir = (codigoLivro) => {
+        controleLivro.excluirLivro(codigoLivro).then(() => {
+            setCarregado(false);
+        });
     };
 
     return (
         <main>
-            <h1 className=" text-dark p-0 m-0 border-bottom">Catálogo de Livros</h1>
+            <h1 className="text-dark p-0 m-0 border-bottom">Catálogo de Livros</h1>
             <table className="table p-0 m-0">
                 <thead className="bg-dark text-light p-0 m-0">
                     <tr>
@@ -44,9 +37,9 @@ export default function LivroLista() {
                     </tr>
                 </thead>
                 <tbody>
-                    {livros.map(livro => (
+                    {livros.map((livro, index) => (
                         <LinhaLivro
-                            key={livro.codigo}
+                            key={index}
                             livro={livro}
                             excluir={excluir}
                         />
@@ -59,7 +52,6 @@ export default function LivroLista() {
 
 function LinhaLivro({ livro, excluir }) {
     const nomeEditora = controleEditora.getNomeEditora(livro.codEditora);
-    
 
     return (
         <tr>

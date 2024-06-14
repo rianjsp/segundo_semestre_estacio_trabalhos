@@ -18,10 +18,8 @@ export default function LivroDados() {
     const [resumo, setResumo] = useState('');
     const [autores, setAutores] = useState('');
     const [codEditora, setCodEditora] = useState(opcoes[0].value);
-
     
     const navigate = useNavigate();
-
     
     const tratarCombo = (event) => {
         setCodEditora(Number(event.target.value)); 
@@ -29,20 +27,18 @@ export default function LivroDados() {
 
     const incluir = (event) => {
         event.preventDefault();
-
         
         const novoLivro = {
-            codigo: 0,
+            codigo: '',
             titulo: titulo,
             resumo: resumo,
             autores: autores.split('\n'), 
             codEditora: codEditora
         };
 
-        
-        controleLivro.incluirLivro(novoLivro);
-
-        navigate('/');
+        controleLivro.incluirLivro(novoLivro).then(() => {
+            navigate('/');
+        });
     };
 
     return (
@@ -69,7 +65,6 @@ export default function LivroDados() {
                     <label htmlFor="autores">Autores (1 por linha)</label>
                     <textarea id="autores" className="form-control" value={autores} onChange={(e) => setAutores(e.target.value)} required/>
                 </div>
-                
                 <button type="submit" className="btn btn-primary mt-2">Salvar dados</button>
             </form>
         </main>
