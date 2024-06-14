@@ -31,8 +31,8 @@
 
 - O código esta bastante organizado;
 - Nessa missão, obtive habilidades em:
-    a. construção de servidores com base em Express e Mongoose
+    - construção de servidores com base em Express e Mongoose
 
-    b. integrar diferentes tipos de front-end ao back-end baseado em protocolo HTTP
+    - integrar diferentes tipos de front-end ao back-end baseado em protocolo HTTP
  
 ## Todos os itens dos trabalhos estão organizados em pastas e subpastas para melhor organização dos trabalhos do semestre. Espero que não me prejudique por organização.
