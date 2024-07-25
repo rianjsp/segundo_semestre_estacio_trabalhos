@@ -2,7 +2,7 @@
 - `POLO BARREIRO - BELO HORIZONTE - MG `
 - `Conhecendo outro framework – 2024.3 – 1 Semestre letivo`
 - `Aluno`: `Rian Joseph Ramos Felizardo`
-- `Matrícula`: `202202923931`
+- `Matrícula`: `2022029...`
 - `Turma`: `2023.1`
 
 ## Estrutura do Projeto de implementação Angular.  
